@@ -27,6 +27,9 @@ public class NavigationTest {
         String title2 = driver.getTitle();
         driver.navigate().back();
         title = driver.getTitle();
+        Thread.sleep(2000);
+        driver.navigate().to("https://etsy.com");
+        title2 = driver.getTitle();
          driver.quit();
     }
 
